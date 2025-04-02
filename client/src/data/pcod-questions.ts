@@ -1,101 +1,101 @@
 export const questions = [
   {
     id: 1,
-    question: "Do you experience irregular menstrual cycles?",
+    question: "Do you experience irregular menstrual cycles (infrequent, inconsistent, or missed periods)?",
     options: [
-      "Yes, I have fewer than 9 periods per year",
-      "Sometimes, my periods are occasionally irregular",
+      "Yes, my periods are very irregular",
+      "Sometimes my periods are irregular",
       "No, my periods are regular"
     ],
     scores: [3, 1, 0]
   },
   {
     id: 2,
-    question: "Have you noticed unusual weight gain that is difficult to lose?",
+    question: "Have you gained weight, especially around your abdomen, that is difficult to lose?",
     options: [
-      "Yes, I've gained weight and it's very difficult to lose",
-      "I've noticed some weight gain but can lose it with effort",
-      "No, my weight is stable or I can lose weight when I try"
-    ],
-    scores: [3, 1, 0]
-  },
-  {
-    id: 3,
-    question: "Do you have acne on your face, chest, or back?",
-    options: [
-      "Yes, persistent acne that doesn't respond well to treatments",
-      "Occasionally I get some acne",
-      "No, I rarely or never get acne"
+      "Yes, I've gained significant weight that's hard to lose",
+      "I've gained some weight but it's not too significant",
+      "No, my weight is stable or I don't have trouble managing it"
     ],
     scores: [2, 1, 0]
   },
   {
-    id: 4,
-    question: "Have you noticed increased hair growth on your face, chest, or back?",
+    id: 3,
+    question: "Do you have excessive hair growth on your face, chest, or back?",
     options: [
-      "Yes, significant hair growth in unusual places",
-      "Some noticeable hair growth",
-      "No, I haven't noticed unusual hair growth"
+      "Yes, I have noticeable excessive hair growth",
+      "I have some extra hair growth but it's mild",
+      "No, I don't have excessive hair growth"
     ],
     scores: [3, 1, 0]
   },
   {
-    id: 5,
-    question: "Do you experience thinning hair or hair loss on your scalp?",
+    id: 4,
+    question: "Do you experience acne or oily skin that persists beyond adolescence?",
     options: [
-      "Yes, significant thinning or bald spots",
-      "Some thinning or more hair falling out than usual",
-      "No, my hair seems normal"
+      "Yes, I have persistent acne/oily skin issues",
+      "I have occasional breakouts",
+      "No, my skin is generally clear"
+    ],
+    scores: [2, 1, 0]
+  },
+  {
+    id: 5,
+    question: "Have you noticed thinning hair or hair loss from your scalp?",
+    options: [
+      "Yes, I have noticeable hair thinning or loss",
+      "I've noticed some thinning but it's not severe",
+      "No, I haven't noticed any significant hair loss"
     ],
     scores: [2, 1, 0]
   },
   {
     id: 6,
-    question: "Do you experience skin darkening, particularly around the neck, groin, or under breasts?",
+    question: "Do you feel tired or fatigued frequently, even after adequate rest?",
     options: [
-      "Yes, significant darkening in these areas",
-      "Some slight darkening",
-      "No, I haven't noticed skin darkening"
+      "Yes, I'm frequently tired even after rest",
+      "I sometimes feel unusually tired",
+      "No, my energy levels are normal"
     ],
-    scores: [2, 1, 0]
+    scores: [1, 0.5, 0]
   },
   {
     id: 7,
-    question: "Do you often feel tired or have low energy?",
+    question: "Have you been diagnosed with insulin resistance or do you have darkening of skin in certain areas (like neck folds, underarms)?",
     options: [
-      "Yes, frequently",
-      "Sometimes",
-      "No, rarely or never"
+      "Yes, I have insulin resistance or skin darkening",
+      "I have some skin darkening but no diagnosis",
+      "No, I don't have these issues"
     ],
-    scores: [1, 0.5, 0]
+    scores: [3, 1, 0]
   },
   {
     id: 8,
-    question: "Have you been trying to get pregnant for more than a year without success?",
-    options: [
-      "Yes",
-      "I've been trying for less than a year",
-      "No, or not applicable"
-    ],
-    scores: [2, 1, 0]
-  },
-  {
-    id: 9,
-    question: "Do you experience mood swings, anxiety, or depression?",
+    question: "Do you experience mood swings, anxiety, or depression that might be connected to your hormonal cycle?",
     options: [
       "Yes, frequently",
       "Sometimes",
-      "No, rarely or never"
+      "Rarely or never"
     ],
     scores: [1, 0.5, 0]
   },
   {
-    id: 10,
-    question: "Has a family member (mother, sister) been diagnosed with PCOD/PCOS?",
+    id: 9,
+    question: "Have you had difficulty conceiving (if you've been trying to get pregnant)?",
     options: [
-      "Yes",
-      "Not sure",
-      "No"
+      "Yes, I've been trying without success for over a year",
+      "I'm not sure / Haven't been trying long enough",
+      "No fertility issues or not applicable"
+    ],
+    scores: [2, 0, 0]
+  },
+  {
+    id: 10,
+    question: "Do you have a family history of PCOD, diabetes, or hormonal problems?",
+    options: [
+      "Yes, immediate family (mother, sister)",
+      "Yes, extended family",
+      "No family history I'm aware of"
     ],
     scores: [2, 1, 0]
   }

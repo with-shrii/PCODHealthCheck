@@ -61,17 +61,28 @@ export function useAssessment() {
     try {
       // Save assessment result to backend (optional)
       await apiRequest('POST', '/api/assessment', { score, riskLevel });
+      
+      // Update state only after API call completes successfully
+      setState(prev => ({
+        ...prev,
+        view: 'results',
+        score,
+        riskLevel,
+      }));
+      
+      console.log('Assessment submitted successfully:', { score, riskLevel });
     } catch (error) {
       // Continue even if saving fails - this is optional functionality
       console.error('Failed to save assessment result:', error);
+      
+      // Even if API fails, we still want to show results
+      setState(prev => ({
+        ...prev,
+        view: 'results',
+        score,
+        riskLevel,
+      }));
     }
-    
-    setState(prev => ({
-      ...prev,
-      view: 'results',
-      score,
-      riskLevel,
-    }));
   }, [calculateScore, determineRiskLevel]);
 
   const retakeAssessment = useCallback(() => {

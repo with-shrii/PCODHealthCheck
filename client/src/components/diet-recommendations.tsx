@@ -4,13 +4,13 @@ export default function DietRecommendations() {
   return (
     <div className="bg-white rounded-lg shadow-md p-6 mb-6">
       <h2 className="text-xl font-semibold mb-4 flex items-center">
-        <Zap className="h-6 w-6 mr-2 text-emerald-500" />
+        <Zap className="h-6 w-6 mr-2 text-blue-500" />
         Diet Recommendations for PCOD
       </h2>
       
       <div className="mb-6">
         <p className="mb-4 text-gray-700">
-          Following a PCOD-friendly diet can help manage your symptoms and improve your overall health. Here's a comprehensive diet plan to help you get started:
+          A balanced diet can help manage PCOD symptoms, improve hormone balance, and support overall health. Here's a recommended dietary approach:
         </p>
         
         <div className="mt-4">
@@ -20,65 +20,92 @@ export default function DietRecommendations() {
             <div className="bg-green-50 p-4 rounded-lg">
               <h4 className="font-medium text-emerald-600 mb-2">High-Fiber Foods</h4>
               <ul className="list-disc pl-5 text-gray-700 space-y-1">
-                <li>Brown rice</li>
-                <li>Quinoa</li>
-                <li>Whole wheat bread</li>
-                <li>Lentils and beans</li>
-                <li>Broccoli and cauliflower</li>
-                <li>Spinach</li>
+                <li>Whole grains (brown rice, oats, quinoa)</li>
+                <li>Beans and lentils</li>
+                <li>Fresh fruits with skin</li>
+                <li>Vegetables (especially leafy greens)</li>
+                <li>Nuts and seeds</li>
               </ul>
             </div>
             
             <div className="bg-green-50 p-4 rounded-lg">
-              <h4 className="font-medium text-emerald-600 mb-2">Lean Protein Sources</h4>
+              <h4 className="font-medium text-emerald-600 mb-2">Lean Proteins</h4>
               <ul className="list-disc pl-5 text-gray-700 space-y-1">
-                <li>Fish (tuna, salmon, sardines)</li>
-                <li>Tofu</li>
-                <li>Lentils</li>
-                <li>Skinless poultry</li>
+                <li>Chicken and turkey (without skin)</li>
+                <li>Fish (especially fatty fish like salmon)</li>
+                <li>Tofu and tempeh</li>
+                <li>Eggs</li>
+                <li>Low-fat dairy (in moderation)</li>
               </ul>
             </div>
             
             <div className="bg-green-50 p-4 rounded-lg">
-              <h4 className="font-medium text-emerald-600 mb-2">Low-Glycemic Carbohydrates</h4>
+              <h4 className="font-medium text-emerald-600 mb-2">Healthy Fats</h4>
               <ul className="list-disc pl-5 text-gray-700 space-y-1">
-                <li>Sweet potatoes</li>
-                <li>Quinoa</li>
-                <li>Steel-cut oats</li>
-                <li>Whole-grain pasta</li>
+                <li>Avocados</li>
+                <li>Olive oil</li>
+                <li>Nuts (almonds, walnuts)</li>
+                <li>Seeds (flax, chia, pumpkin)</li>
+                <li>Fatty fish</li>
               </ul>
             </div>
             
             <div className="bg-green-50 p-4 rounded-lg">
-              <h4 className="font-medium text-emerald-600 mb-2">Antioxidant-Rich Fruits</h4>
+              <h4 className="font-medium text-emerald-600 mb-2">Anti-Inflammatory Foods</h4>
               <ul className="list-disc pl-5 text-gray-700 space-y-1">
-                <li>Berries (strawberries, blueberries)</li>
-                <li>Cherries</li>
-                <li>Kiwis</li>
-                <li>Apples</li>
-                <li>Pears</li>
+                <li>Turmeric</li>
+                <li>Ginger</li>
+                <li>Berries</li>
+                <li>Leafy greens</li>
+                <li>Green tea</li>
               </ul>
             </div>
           </div>
           
-          <h3 className="text-lg font-medium mb-2 text-red-500">Foods to Avoid:</h3>
+          <h3 className="text-lg font-medium mb-2 text-red-500">Foods to Avoid or Limit:</h3>
           
           <div className="grid md:grid-cols-2 gap-4 mb-6">
             <div className="bg-red-50 p-4 rounded-lg">
-              <h4 className="font-medium text-red-500 mb-2">Refined Carbohydrates and Sugars</h4>
+              <h4 className="font-medium text-red-500 mb-2">Refined Carbohydrates</h4>
               <ul className="list-disc pl-5 text-gray-700 space-y-1">
-                <li>White bread, pasta, and rice</li>
-                <li>Sugary snacks and desserts</li>
-                <li>Sweetened beverages</li>
+                <li>White bread and pasta</li>
+                <li>White rice</li>
+                <li>Sugary breakfast cereals</li>
+                <li>Pastries and cookies</li>
+                <li>Cakes and donuts</li>
               </ul>
             </div>
             
             <div className="bg-red-50 p-4 rounded-lg">
-              <h4 className="font-medium text-red-500 mb-2">Processed and Fried Foods</h4>
+              <h4 className="font-medium text-red-500 mb-2">Added Sugars</h4>
               <ul className="list-disc pl-5 text-gray-700 space-y-1">
-                <li>Packaged snacks and junk food</li>
+                <li>Candy and chocolate</li>
+                <li>Sugary beverages and sodas</li>
+                <li>Sweetened juices</li>
+                <li>Ice cream</li>
+                <li>Many processed foods</li>
+              </ul>
+            </div>
+            
+            <div className="bg-red-50 p-4 rounded-lg">
+              <h4 className="font-medium text-red-500 mb-2">Unhealthy Fats</h4>
+              <ul className="list-disc pl-5 text-gray-700 space-y-1">
+                <li>Fried foods</li>
+                <li>Processed meats</li>
+                <li>Margarine and shortening</li>
+                <li>Many packaged snacks</li>
                 <li>Fast food</li>
-                <li>Deep-fried items</li>
+              </ul>
+            </div>
+            
+            <div className="bg-red-50 p-4 rounded-lg">
+              <h4 className="font-medium text-red-500 mb-2">Other Items to Limit</h4>
+              <ul className="list-disc pl-5 text-gray-700 space-y-1">
+                <li>Alcohol</li>
+                <li>Caffeine</li>
+                <li>Highly processed foods</li>
+                <li>High-sodium foods</li>
+                <li>Artificial sweeteners</li>
               </ul>
             </div>
           </div>
@@ -86,7 +113,7 @@ export default function DietRecommendations() {
       </div>
 
       <div className="border-t border-gray-200 pt-4">
-        <h3 className="text-lg font-medium mb-4">Weekly Diet Chart for PCOD</h3>
+        <h3 className="text-lg font-medium mb-4">Sample 7-Day Meal Plan for PCOD</h3>
         
         <div className="overflow-x-auto">
           <table className="min-w-full bg-white border border-gray-200">
@@ -96,63 +123,79 @@ export default function DietRecommendations() {
                 <th className="py-2 px-3 border-b bg-gray-100 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">Breakfast</th>
                 <th className="py-2 px-3 border-b bg-gray-100 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">Lunch</th>
                 <th className="py-2 px-3 border-b bg-gray-100 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">Dinner</th>
+                <th className="py-2 px-3 border-b bg-gray-100 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">Snacks</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td className="py-3 px-3 border-b border-gray-200 text-sm font-medium">Monday</td>
-                <td className="py-3 px-3 border-b border-gray-200 text-sm">Besan chilla with green chutney</td>
-                <td className="py-3 px-3 border-b border-gray-200 text-sm">Dal, roti, mixed vegetable sabzi, cucumber salad</td>
-                <td className="py-3 px-3 border-b border-gray-200 text-sm">Grilled paneer with sautéed vegetables</td>
+                <td className="py-3 px-3 border-b border-gray-200 text-sm">Oatmeal with berries and chopped nuts</td>
+                <td className="py-3 px-3 border-b border-gray-200 text-sm">Grilled chicken salad with olive oil dressing</td>
+                <td className="py-3 px-3 border-b border-gray-200 text-sm">Baked salmon with roasted vegetables</td>
+                <td className="py-3 px-3 border-b border-gray-200 text-sm">Apple slices with almond butter</td>
               </tr>
               <tr>
                 <td className="py-3 px-3 border-b border-gray-200 text-sm font-medium">Tuesday</td>
-                <td className="py-3 px-3 border-b border-gray-200 text-sm">Vegetable poha with peanuts</td>
-                <td className="py-3 px-3 border-b border-gray-200 text-sm">Quinoa khichdi with raita and spinach sabzi</td>
-                <td className="py-3 px-3 border-b border-gray-200 text-sm">Brown rice, palak dal, and sautéed broccoli</td>
+                <td className="py-3 px-3 border-b border-gray-200 text-sm">Smoothie with spinach, berries, and protein powder</td>
+                <td className="py-3 px-3 border-b border-gray-200 text-sm">Lentil soup with a side salad</td>
+                <td className="py-3 px-3 border-b border-gray-200 text-sm">Turkey stir-fry with brown rice and vegetables</td>
+                <td className="py-3 px-3 border-b border-gray-200 text-sm">Greek yogurt with cinnamon</td>
               </tr>
               <tr>
                 <td className="py-3 px-3 border-b border-gray-200 text-sm font-medium">Wednesday</td>
-                <td className="py-3 px-3 border-b border-gray-200 text-sm">Moong dal dosa with chutney</td>
-                <td className="py-3 px-3 border-b border-gray-200 text-sm">Rajma, brown rice, and salad</td>
-                <td className="py-3 px-3 border-b border-gray-200 text-sm">Grilled fish with mixed vegetables</td>
+                <td className="py-3 px-3 border-b border-gray-200 text-sm">Scrambled eggs with spinach and tomatoes</td>
+                <td className="py-3 px-3 border-b border-gray-200 text-sm">Quinoa bowl with chickpeas and vegetables</td>
+                <td className="py-3 px-3 border-b border-gray-200 text-sm">Grilled fish with steamed broccoli</td>
+                <td className="py-3 px-3 border-b border-gray-200 text-sm">Handful of mixed nuts</td>
               </tr>
               <tr>
                 <td className="py-3 px-3 border-b border-gray-200 text-sm font-medium">Thursday</td>
-                <td className="py-3 px-3 border-b border-gray-200 text-sm">Ragi dosa with sambar</td>
-                <td className="py-3 px-3 border-b border-gray-200 text-sm">Bajra roti, vegetable curry, and cucumber raita</td>
-                <td className="py-3 px-3 border-b border-gray-200 text-sm">Quinoa pulao with tofu and stir-fried vegetables</td>
+                <td className="py-3 px-3 border-b border-gray-200 text-sm">Chia seed pudding with berries</td>
+                <td className="py-3 px-3 border-b border-gray-200 text-sm">Tuna salad with avocado on whole grain bread</td>
+                <td className="py-3 px-3 border-b border-gray-200 text-sm">Chicken and vegetable soup</td>
+                <td className="py-3 px-3 border-b border-gray-200 text-sm">Carrot sticks with hummus</td>
               </tr>
               <tr>
                 <td className="py-3 px-3 border-b border-gray-200 text-sm font-medium">Friday</td>
-                <td className="py-3 px-3 border-b border-gray-200 text-sm">Oats porridge with flax seeds and almonds</td>
-                <td className="py-3 px-3 border-b border-gray-200 text-sm">Chicken curry with brown rice and salad</td>
-                <td className="py-3 px-3 border-b border-gray-200 text-sm">Methi thepla with vegetable sabzi and curd</td>
+                <td className="py-3 px-3 border-b border-gray-200 text-sm">Whole grain toast with avocado and eggs</td>
+                <td className="py-3 px-3 border-b border-gray-200 text-sm">Large mixed vegetable salad with grilled tofu</td>
+                <td className="py-3 px-3 border-b border-gray-200 text-sm">Baked chicken with sweet potato and green beans</td>
+                <td className="py-3 px-3 border-b border-gray-200 text-sm">Fresh fruit</td>
               </tr>
               <tr>
                 <td className="py-3 px-3 border-b border-gray-200 text-sm font-medium">Saturday</td>
-                <td className="py-3 px-3 border-b border-gray-200 text-sm">Vegetable upma with coconut chutney</td>
-                <td className="py-3 px-3 border-b border-gray-200 text-sm">Masoor dal, roti, and mixed veg sabzi</td>
-                <td className="py-3 px-3 border-b border-gray-200 text-sm">Baked fish with sweet potatoes</td>
+                <td className="py-3 px-3 border-b border-gray-200 text-sm">Greek yogurt parfait with granola and fruit</td>
+                <td className="py-3 px-3 border-b border-gray-200 text-sm">Vegetable soup with a side of whole grain crackers</td>
+                <td className="py-3 px-3 border-b border-gray-200 text-sm">Grilled shrimp with quinoa and roasted vegetables</td>
+                <td className="py-3 px-3 border-b border-gray-200 text-sm">Handful of berries</td>
               </tr>
               <tr>
                 <td className="py-3 px-3 border-b border-gray-200 text-sm font-medium">Sunday</td>
-                <td className="py-3 px-3 border-b border-gray-200 text-sm">Multigrain paratha with curd and chutney</td>
-                <td className="py-3 px-3 border-b border-gray-200 text-sm">Chana dal, quinoa pulao, and sautéed veggies</td>
-                <td className="py-3 px-3 border-b border-gray-200 text-sm">Vegetable stir-fry with tofu</td>
+                <td className="py-3 px-3 border-b border-gray-200 text-sm">Vegetable omelet with whole grain toast</td>
+                <td className="py-3 px-3 border-b border-gray-200 text-sm">Bean and vegetable salad</td>
+                <td className="py-3 px-3 border-b border-gray-200 text-sm">Grilled lean beef with asparagus and small baked potato</td>
+                <td className="py-3 px-3 border-b border-gray-200 text-sm">Small handful of dark chocolate chips</td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
 
-      <blockquote className="mt-6 bg-blue-50 p-4 rounded-lg border-l-4 border-primary">
+      <div className="mt-6 bg-blue-50 p-4 rounded-lg">
+        <h3 className="text-lg font-medium mb-2">Additional Tips</h3>
+        <ul className="list-disc pl-5 space-y-2 text-gray-700">
+          <li><strong>Portion control:</strong> Be mindful of portion sizes even when eating healthy foods</li>
+          <li><strong>Meal timing:</strong> Try to eat regular meals at consistent times</li>
+          <li><strong>Hydration:</strong> Drink plenty of water throughout the day</li>
+          <li><strong>Physical activity:</strong> Combine dietary changes with regular exercise (at least 30 minutes daily)</li>
+          <li><strong>Sleep:</strong> Aim for 7-8 hours of quality sleep each night</li>
+        </ul>
+      </div>
+
+      <blockquote className="mt-6 bg-purple-50 p-4 rounded-lg border-l-4 border-purple-400">
         <p className="italic text-gray-700">
-          "Remember, everyone's journey with PCOD is different. Be patient with yourself as you make dietary changes. Listen to your body, and let food be your ally in managing your symptoms and supporting fertility."
+          "Remember that dietary changes should be made gradually and maintained consistently. Results may take time, but improved nutrition can significantly help manage PCOD symptoms and improve overall health."
         </p>
-        <footer className="mt-2 text-sm text-gray-600">
-          - Dr. Deepika Mishra, MBBS, MS (Obstetrics & Gynaecology)
-        </footer>
       </blockquote>
     </div>
   );

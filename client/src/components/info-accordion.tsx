@@ -5,73 +5,144 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-export default function InfoAccordion() {
+interface InfoAccordionProps {
+  type: 'pcod' | 'pcos';
+  info: any;
+}
+
+export default function InfoAccordion({ type, info }: InfoAccordionProps) {
   return (
-    <section className="bg-white rounded-lg shadow-md p-6 mb-6">
-      <h2 className="text-xl font-semibold mb-4">Additional Information About PCOD</h2>
+    <div className="bg-white rounded-lg shadow-md p-6 mb-6">
+      <h2 className="text-xl font-semibold mb-4">
+        {type === 'pcod' ? 'PCOD Information' : 'PCOS Information'}
+      </h2>
       
-      <Accordion type="single" collapsible className="space-y-2">
-        <AccordionItem value="symptoms">
-          <AccordionTrigger className="font-medium text-primary">
-            Symptoms of PCOD
+      <Accordion type="single" collapsible className="w-full">
+        <AccordionItem value="item-1">
+          <AccordionTrigger className="text-left">
+            {type === 'pcod' ? info.whatIsPcod.title : info.whatIsPcos.title}
+          </AccordionTrigger>
+          <AccordionContent>
+            <div className="mt-2 space-y-4">
+              {(type === 'pcod' ? info.whatIsPcod.content : info.whatIsPcos.content).map(
+                (paragraph: string, index: number) => (
+                  <p key={index} className="text-gray-700">{paragraph}</p>
+                )
+              )}
+              {/* Image would go here if available */}
+              {/* {info.whatIsPcod.imageUrl && (
+                <img 
+                  src={info.whatIsPcod.imageUrl} 
+                  alt={info.whatIsPcod.title} 
+                  className="max-w-full mt-4 rounded-lg"
+                />
+              )} */}
+            </div>
+          </AccordionContent>
+        </AccordionItem>
+        
+        <AccordionItem value="item-2">
+          <AccordionTrigger className="text-left">
+            {info.symptoms.title}
           </AccordionTrigger>
           <AccordionContent>
             <ul className="list-disc pl-5 space-y-2 text-gray-700">
-              <li>Visible acne on various parts of the body, like the face, neck, and back</li>
-              <li>Evident increase in weight and difficulty losing it</li>
-              <li>Thinning hair on the scalp</li>
-              <li>Irregularity in the menstrual cycle (less than nine periods in a year)</li>
-              <li>Fertility problems</li>
-              <li>Depression due to hormonal changes</li>
+              {info.symptoms.list.map((symptom: string, index: number) => (
+                <li key={index}>{symptom}</li>
+              ))}
             </ul>
           </AccordionContent>
         </AccordionItem>
         
-        <AccordionItem value="causes">
-          <AccordionTrigger className="font-medium text-primary">
-            Causes of PCOD
+        <AccordionItem value="item-3">
+          <AccordionTrigger className="text-left">
+            {info.causes.title}
           </AccordionTrigger>
           <AccordionContent>
             <ul className="list-disc pl-5 space-y-2 text-gray-700">
-              <li>Imbalance in sex hormones, particularly increased production of androgens</li>
-              <li>Irregular ovulation or failure to ovulate</li>
-              <li>Formation of small cysts in the ovaries due to immature eggs</li>
-              <li>Genetic factors (may run in families)</li>
-              <li>Insulin resistance</li>
+              {info.causes.list.map((cause: string, index: number) => (
+                <li key={index}>{cause}</li>
+              ))}
             </ul>
           </AccordionContent>
         </AccordionItem>
         
-        <AccordionItem value="treatments">
-          <AccordionTrigger className="font-medium text-primary">
-            Treatment Methods for PCOD
+        <AccordionItem value="item-4">
+          <AccordionTrigger className="text-left">
+            {info.diagnosis.title}
           </AccordionTrigger>
           <AccordionContent>
             <ul className="list-disc pl-5 space-y-2 text-gray-700">
-              <li>Ayurvedic treatment using natural herbs like ashwagandha, cinnamon, and turmeric</li>
-              <li>Surgical methods, like laparoscopy (band-aid surgery)</li>
-              <li>Yoga and exercise, like cobra pose, reclining butterfly pose, bow pose</li>
-              <li>Lifestyle changes, including weight loss and dietary modifications</li>
-              <li>Birth control pills or progesterone tablets to regulate menstrual periods</li>
-              <li>Metformin to improve insulin sensitivity</li>
+              {info.diagnosis.methods.map((method: string, index: number) => (
+                <li key={index}>{method}</li>
+              ))}
             </ul>
           </AccordionContent>
         </AccordionItem>
         
-        <AccordionItem value="complications">
-          <AccordionTrigger className="font-medium text-primary">
-            Complications of PCOD
+        <AccordionItem value="item-5">
+          <AccordionTrigger className="text-left">
+            {info.treatments.title}
+          </AccordionTrigger>
+          <AccordionContent>
+            <div className="space-y-4">
+              <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                {info.treatments.methods.map((method: string, index: number) => (
+                  <li key={index}>{method}</li>
+                ))}
+              </ul>
+              
+              <div className="bg-blue-50 p-4 rounded-lg mt-4">
+                <h4 className="font-medium mb-2">{info.treatments.lifestyle.title}</h4>
+                <ul className="list-disc pl-5 space-y-1 text-gray-700">
+                  {info.treatments.lifestyle.list.map((item: string, index: number) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+              
+              <div className="bg-green-50 p-4 rounded-lg mt-4">
+                <h4 className="font-medium mb-2">{info.treatments.medications.title}</h4>
+                <ul className="list-disc pl-5 space-y-1 text-gray-700">
+                  {info.treatments.medications.list.map((item: string, index: number) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </AccordionContent>
+        </AccordionItem>
+        
+        <AccordionItem value="item-6">
+          <AccordionTrigger className="text-left">
+            {info.complications.title}
           </AccordionTrigger>
           <AccordionContent>
             <ul className="list-disc pl-5 space-y-2 text-gray-700">
-              <li>Increased risk of endometrial cancer</li>
-              <li>Infertility</li>
-              <li>Obesity-related conditions (high blood pressure, heart problems, diabetes)</li>
-              <li>Possible increased risk of breast cancer</li>
+              {info.complications.list.map((complication: string, index: number) => (
+                <li key={index}>{complication}</li>
+              ))}
             </ul>
           </AccordionContent>
         </AccordionItem>
+        
+        {type === 'pcos' && info.differenceFromPcod && (
+          <AccordionItem value="item-7">
+            <AccordionTrigger className="text-left">
+              {info.differenceFromPcod.title}
+            </AccordionTrigger>
+            <AccordionContent>
+              <div className="mt-2 space-y-4">
+                {info.differenceFromPcod.content.map(
+                  (paragraph: string, index: number) => (
+                    <p key={index} className="text-gray-700">{paragraph}</p>
+                  )
+                )}
+              </div>
+            </AccordionContent>
+          </AccordionItem>
+        )}
       </Accordion>
-    </section>
+    </div>
   );
 }
