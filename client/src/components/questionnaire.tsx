@@ -25,17 +25,18 @@ export default function Questionnaire() {
     const newAnswers = [...selectedAnswers];
     newAnswers[questionIndex] = answerScore;
     setSelectedAnswers(newAnswers);
-  };
-  
-  const goToNextQuestion = () => {
-    if (currentQuestion < totalQuestions - 1) {
-      setCurrentQuestion(prev => prev + 1);
-    } else {
-      // Calculate score and show results
-      const totalScore = selectedAnswers.reduce((acc, curr) => acc + (curr || 0), 0);
-      setScore(totalScore);
-      setShowResults(true);
-    }
+    
+    // Automatically proceed to next question after selecting an answer
+    setTimeout(() => {
+      if (questionIndex < totalQuestions - 1) {
+        setCurrentQuestion(prev => prev + 1);
+      } else {
+        // Calculate score and show results
+        const totalScore = newAnswers.reduce((acc, curr) => acc + (curr || 0), 0);
+        setScore(totalScore);
+        setShowResults(true);
+      }
+    }, 500); // Short delay for better UX
   };
   
   const goToPreviousQuestion = () => {
@@ -144,20 +145,13 @@ export default function Questionnaire() {
           </div>
         </div>
         
-        <div className="flex justify-between">
+        <div className="flex justify-start">
           <Button
             variant="outline"
             onClick={goToPreviousQuestion}
             disabled={currentQuestion === 0}
           >
-            Previous
-          </Button>
-          
-          <Button
-            onClick={goToNextQuestion}
-            disabled={selectedAnswers[currentQuestion] === undefined}
-          >
-            {currentQuestion < totalQuestions - 1 ? 'Next' : 'Submit'}
+            Previous Question
           </Button>
         </div>
       </div>

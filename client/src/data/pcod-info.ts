@@ -2,8 +2,8 @@ export const pcodInfo = {
   whatIsPcod: {
     title: "What is PCOD?",
     content: [
-      "PCOD (Polycystic Ovarian Disease) is a common endocrine disorder affecting women of reproductive age. It's characterized by the formation of multiple small cysts in the ovaries, irregular periods, and hormonal imbalances.",
-      "In PCOD, the ovaries produce higher than normal amounts of male hormones (androgens), which can interfere with the development and release of eggs during ovulation. This hormonal imbalance can lead to various symptoms and health concerns."
+      "PCOD (Polycystic Ovarian Disease) is a condition in which a woman's hormones are out of balance. Women with PCOD may have higher than normal male hormone levels and irregular periods. According to Healthline, PCOD causes small fluid-filled sacs to develop in the ovaries, which can affect normal ovulation.",
+      "PCOD is a common hormonal disorder, affecting 5-10% of women in their childbearing years. While similar to PCOS (Polycystic Ovary Syndrome), PCOD is generally considered a milder condition with better treatment outcomes."
     ],
     imageUrl: "https://birlafertility.com/wp-content/uploads/2020/12/What-is-PCOS.jpg"
   },
@@ -50,30 +50,30 @@ export const pcodInfo = {
   treatments: {
     title: "Treatment Options for PCOD",
     methods: [
-      "Lifestyle modifications - diet and exercise",
-      "Hormonal treatments like birth control pills",
-      "Anti-androgen medications",
+      "Lifestyle modifications - diet and exercise (first-line approach)",
+      "Hormonal treatments like birth control pills to regulate cycles",
+      "Anti-androgen medications to reduce male hormone symptoms",
       "Metformin or similar medications to improve insulin sensitivity",
       "Fertility treatments for women trying to conceive"
     ],
     lifestyle: {
-      title: "Lifestyle Changes",
+      title: "Lifestyle Approaches (from Healthline)",
       list: [
-        "Weight management through healthy diet and regular exercise",
-        "Low glycemic index diet to improve insulin sensitivity",
-        "Regular physical activity (at least 30 minutes daily)",
-        "Stress management techniques like yoga or meditation",
-        "Adequate sleep and rest"
+        "Weight management: Even losing 5-10% of body weight can significantly improve symptoms",
+        "Regular physical activity: 150 minutes of moderate exercise weekly",
+        "Balanced diet: Focus on whole foods, limit processed foods and added sugars",
+        "Stress reduction: Yoga, meditation, and mindfulness techniques",
+        "Adequate sleep: Poor sleep can worsen insulin resistance and hormonal issues"
       ]
     },
     medications: {
-      title: "Common Medications",
+      title: "Medical Treatments",
       list: [
-        "Oral contraceptives to regulate menstrual cycles and reduce androgen levels",
-        "Anti-androgen medications like spironolactone to reduce excessive hair growth",
-        "Metformin to improve insulin resistance",
-        "Clomiphene or letrozole for ovulation induction in women trying to conceive",
-        "Cyclic progesterone to regulate menstrual cycles"
+        "Combination birth control pills: Regulate periods and reduce androgen symptoms",
+        "Anti-androgen medications: Help with acne, hair loss, and excessive hair growth",
+        "Metformin: Improves insulin sensitivity, may help regulate periods and reduce androgen levels",
+        "Clomiphene or letrozole: Help induce ovulation for women trying to conceive",
+        "Progestin therapy: Helps regulate periods and reduce endometrial cancer risk"
       ]
     }
   },

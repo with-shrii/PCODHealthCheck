@@ -10,7 +10,7 @@ export default function DietRecommendations() {
       
       <div className="mb-6">
         <p className="mb-4 text-gray-700">
-          A balanced diet can help manage PCOD symptoms, improve hormone balance, and support overall health. Here's a recommended dietary approach:
+          According to Healthline and medical experts, dietary changes can significantly help manage PCOD symptoms. A balanced diet can improve insulin sensitivity, reduce inflammation, support weight management, and help restore hormonal balance. Here's a recommended dietary approach based on clinical recommendations:
         </p>
         
         <div className="mt-4">
@@ -192,9 +192,42 @@ export default function DietRecommendations() {
         </ul>
       </div>
 
+      <div className="mt-6 bg-indigo-50 p-4 rounded-lg">
+        <h3 className="text-lg font-medium mb-2">Healthline Recommended Diets for PCOD</h3>
+        <div className="space-y-3">
+          <div className="bg-white p-3 rounded-lg shadow-sm">
+            <h4 className="font-medium text-purple-700 mb-1">Low Glycemic Index Diet</h4>
+            <p className="text-sm text-gray-700">
+              Focuses on foods that don't cause blood sugar spikes. This diet helps reduce insulin resistance, a common problem in PCOD.
+            </p>
+          </div>
+          
+          <div className="bg-white p-3 rounded-lg shadow-sm">
+            <h4 className="font-medium text-purple-700 mb-1">Anti-Inflammatory Diet</h4>
+            <p className="text-sm text-gray-700">
+              Emphasizes foods that reduce inflammation in the body, which can help ease PCOD symptoms and improve hormonal balance.
+            </p>
+          </div>
+          
+          <div className="bg-white p-3 rounded-lg shadow-sm">
+            <h4 className="font-medium text-purple-700 mb-1">DASH Diet</h4>
+            <p className="text-sm text-gray-700">
+              Originally designed to reduce blood pressure, the DASH diet may also help with weight management and insulin sensitivity in PCOD patients.
+            </p>
+          </div>
+          
+          <div className="bg-white p-3 rounded-lg shadow-sm">
+            <h4 className="font-medium text-purple-700 mb-1">Mediterranean Diet</h4>
+            <p className="text-sm text-gray-700">
+              Rich in healthy fats, whole grains, and lean proteins, this diet pattern has been shown to improve metabolic and hormonal parameters in PCOD.
+            </p>
+          </div>
+        </div>
+      </div>
+      
       <blockquote className="mt-6 bg-purple-50 p-4 rounded-lg border-l-4 border-purple-400">
         <p className="italic text-gray-700">
-          "Remember that dietary changes should be made gradually and maintained consistently. Results may take time, but improved nutrition can significantly help manage PCOD symptoms and improve overall health."
+          "Remember that dietary changes should be made gradually and maintained consistently. Results may take time, but improved nutrition can significantly help manage PCOD symptoms and improve overall health." <span className="text-purple-600 font-medium">- Healthline</span>
         </p>
       </blockquote>
     </div>
